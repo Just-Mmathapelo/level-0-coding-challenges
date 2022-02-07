@@ -32,6 +32,13 @@ function hello (str){
 hello("Tshepo");
 
 Task 0.4
+function evenOrOdd(num){
+    if (number % 2 == 0){
+       console.log("The number is even.");
+    }else { if (number % 2 >=1){
+    console.log("The number is odd.");
+}
+Task 0.5
 // Pythagoras theorem formula
 function areaOfTriangle(a, b, c){
     var s = (a + b +c)/2;
@@ -39,6 +46,7 @@ function areaOfTriangle(a, b, c){
     console.log(area);
 
 }
+Task 0.7
 
 Task 0.8
 function timeConvert(n) {
