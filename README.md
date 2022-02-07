@@ -26,4 +26,10 @@ console.log(a);
 console.log(b);
 
 Task 0.3
+function hello (str){
+    console.log("Hello" + str + "!")
+}
+hello("Tshepo");
+
+Task 0.4
 
