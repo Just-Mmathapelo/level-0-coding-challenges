@@ -83,7 +83,6 @@ function vowelCount(str) {
         count++;
     }
 }
- 
      return "This string has " + count + " vowels in it";
 }
 vowelCount("Umuzi");
