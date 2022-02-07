@@ -40,3 +40,29 @@ function areaOfTriangle(a, b, c){
 
 }
 
+Task 0.8
+function timeConvert(n) {
+var num = n;
+var hours = (num / 60);
+var rhours = Math.floor(hours);
+var minutes = (hours - rhours) * 60;
+var rminutes = Math.round(minutes);
+return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+}
+
+console.log(timeConvert(200));
+
+Task 0.9
+function vowelCount(str) {
+    var count = 0;
+    var vowels = "aeiou";
+    
+    for(var i = 0; i <str.lenght; i ++){
+        if (vowels.indexOfStr[i].toLowerCase()) > -1) {
+        count++;
+    }
+}
+ 
+     return "This string has " + count + " vowels in it";
+}
+vowelCount("Umuzi");
