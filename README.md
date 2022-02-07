@@ -32,4 +32,11 @@ function hello (str){
 hello("Tshepo");
 
 Task 0.4
+// Pythagoras theorem formula
+function areaOfTriangle(a, b, c){
+    var s = (a + b +c)/2;
+    var area = Math.sqrt(s*((s - a)*(s - b)*(s - c)));
+    console.log(area);
+
+}
 
