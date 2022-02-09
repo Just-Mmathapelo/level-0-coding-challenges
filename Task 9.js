@@ -1,4 +1,45 @@
-"use strict" 
- let s = "Umuzi" 
- let c, i for (i=0; i<=s.length-1; i++){ c = s[i] 
- if (c=="a"|| c=="e" || c=="i" || c=="o" || c=="u" || c=="A"|| c=="E"|| c=="I" || c=="O" || c=="U"){ console.log(c) } }
+function vowelsInString(inputString) {
+  let temp = "";
+  temp = inputString;
+  temp = temp.toLowerCase();
+  let bagOfVowels = "";
+  for (let i = 0; i < temp.length; i++) {
+    if (
+      temp[i] == "i" ||
+      temp[i] == "a" ||
+      temp[i] == "e" ||
+      temp[i] == "o" ||
+      temp[i] == "u"
+    ) {
+      bagOfVowels = bagOfVowels + temp[i]; // + ", ";
+    } else {
+      continue;
+    }
+  }
+
+  bagOfVowels = removeDuplicate(bagOfVowels);
+  temp = bagOfVowels;
+  bagOfVowels = "";
+
+  for (let j = 0; j < temp.length; j++) {
+    bagOfVowels = bagOfVowels + temp[j] + ", ";
+  }
+
+  pos = bagOfVowels.lastIndexOf(",");
+  bagOfVowels = bagOfVowels.substring(0, pos); //removes last comma
+  bagOfVowels = "Vowels: " + bagOfVowels;
+
+  console.log(bagOfVowels);
+}
+
+function removeDuplicate(string) {
+  // function to remove duplicates
+  return string
+    .split("")
+    .filter(function (item, pos, self) {
+      return self.indexOf(item) == pos;
+    })
+    .join("");
+}
+
+vowelsInString("Umuzi");
