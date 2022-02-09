@@ -1,9 +1,23 @@
-function timeConvert(n) {
-    var num = n;
-    var hours = (num / 60);
-    var rhours = Math.floor(hours);
-    var minutes = (hours - rhours) * 60;
-var rminutes = Math.round(minutes);
-return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+function numberToTime(number) {
+  let hours = Math.floor(number / 60);
+  let minutes = number % 60;
+  let time = "";
+
+  if (hours >= 2) {
+    hours = hours + " hours, ";
+  } else {
+    hours = hours + " hour, ";
+  }
+  ////
+  if (minutes >= 2) {
+    minutes = minutes + " minutes.";
+  } else {
+    minutes = minutes + " minute.";
+  }
+
+  time = hours + minutes;
+
+  return time;
 }
-  console.log(timeConvert(75));
+
+console.log(numberToTime(121));
