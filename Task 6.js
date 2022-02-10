@@ -20,5 +20,5 @@
 
 }
 
-console.log(maxOfThree(10,0,1));
-console.log(maxOfThree(0,-100,0.5)); 
+console.log(maximum(10,0,1));
+console.log(maximum(0,-100,0.5)); 
