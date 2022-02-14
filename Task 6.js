@@ -1,6 +1,12 @@
-  function maximum(num1, num2, num3)
+  
+
+
+ 
+
+
+ function maximum(num1, num2, num3)
 {
-  var max = -999;
+  let max = [];
 
   if (num1 > max)
   {
