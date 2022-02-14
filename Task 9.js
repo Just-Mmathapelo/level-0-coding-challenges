@@ -1,3 +1,4 @@
+
 function vowelsInString(inputString) {
   let temp = "";
   temp = inputString;
@@ -5,11 +6,11 @@ function vowelsInString(inputString) {
   let bagOfVowels = "";
   for (let i = 0; i < temp.length; i++) {
     if (
-      temp[i] == "i" ||
-      temp[i] == "a" ||
-      temp[i] == "e" ||
-      temp[i] == "o" ||
-      temp[i] == "u"
+      temp[i] === "i" ||
+      temp[i] === "a" ||
+      temp[i] === "e" ||
+      temp[i] === "o" ||
+      temp[i] === "u"
     ) {
       bagOfVowels = bagOfVowels + temp[i]; // + ", ";
     } else {
@@ -37,7 +38,7 @@ function removeDuplicate(string) {
   return string
     .split("")
     .filter(function (item, pos, self) {
-      return self.indexOf(item) == pos;
+      return self.indexOf(item) === pos;
     })
     .join("");
 }
